@@ -99,7 +99,7 @@ window.addEventListener('scroll', function() {
     }
 
 	var position = element.getBoundingClientRect();
-    var thresh = 300;
+    var thresh = 500;
 
 	// checking whether fully visible
 	if(position.top >= thresh && position.bottom + thresh <= window.innerHeight) {

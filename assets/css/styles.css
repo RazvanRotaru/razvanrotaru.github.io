@@ -985,7 +985,7 @@ img {
     }
 
     .qualification__button {
-        margin-left: 0 var(--mb-1);
+        margin: 0 var(--mb-1);
     }
 
     .qualification__sections {
