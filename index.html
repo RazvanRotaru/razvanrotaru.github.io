@@ -24,7 +24,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -53,6 +53,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -221,7 +224,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!--==================== SKILL 2 ====================-->
+                    </div>
+
+                    <div>
+                    <!--==================== SKILL 2 ====================-->
                         <div class="skills__content">
                             <div class="skills__header skills__close">
                                 <i class="uil uil-ruler-combined skills__icon"></i>
@@ -234,7 +240,7 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__names">Stroy Telling</h3>
+                                        <h3 class="skills__name">Stroy Telling</h3>
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -502,119 +508,184 @@
                 <div class="portfolio__container container">
                     <div class="portfolio__grid grid">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid" data-target="#dodgethis">
                             <img src="assets/img/dodgethis.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">dodgeTH!S</h3>
-                                <p class="portfolio__description">A game about death, a loving pet and dodging</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
                         </div>
 
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid" data-target="#nfh3d">
                             <img src="assets/img/nfh3d.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Neighbours From Hell 3D</h3>
-                                <p class="portfolio__description">A reinterpretation of the classic game with a sprinkle of music</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
                         </div>
 
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid" data-target="#mutation">
                             <img src="assets/img/mutation.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Species Mutation Algorithm</h3>
-                                <p class="portfolio__description">A simulation of species coping to new environments</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
                         </div>
 
                         <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid" data-target="#meddow">
                             <img src="assets/img/meddow.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Wishing for a Meddow</h3>
-                                <p class="portfolio__description">TODO</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
                         </div>
 
                         <!--==================== PORTFOLIO 5 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid qualification__active" data-target="#animal-oasis">
                             <img src="assets/img/animal_oasis.jpeg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Animal Oasis</h3>
-                                <p class="portfolio__description">TODO</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
                         </div>
 
                         <!--==================== PORTFOLIO 6 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid" data-target="#forgotten-tales">
                             <img src="assets/img/forgotten_tales.png" alt="" class="portfolio__img">
+                        </div>
+                    </div>
 
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Forgotten Tales</h3>
-                                <p class="portfolio__description">TODO</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+                    <div class="portfolio__data" id="dodgethis">
+                        <h3 class="portfolio__title">dodgeTH!S</h3>
+                        <p class="portfolio__description">A game about death, a loving pet and dodging</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-youtube decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__data" id="nfh3d">
+                        <h3 class="portfolio__title">Neighbours From Hell 3D</h3>
+                        <p class="portfolio__description">A reinterpretation of the classic game with a sprinkle of music</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-youtube decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Repo
+                            <i class="uil uil-github decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__data" id="mutation">
+                        <h3 class="portfolio__title">Species Mutation Algorithm</h3>
+                        <p class="portfolio__description">A simulation of species coping to new environments</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Repo
+                            <i class="uil uil-github decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__data" id="meddow">
+                        <h3 class="portfolio__title">Wishing for a Meddow</h3>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-youtube decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Repo
+                            <i class="uil uil-github decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__data qualification__active" id="animal-oasis">
+                        <h3 class="portfolio__title">Animal Oasis</h3>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-youtube decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="portfolio__data" id="forgotten-tales">
+                        <h3 class="portfolio__title">Forgotten Tales</h3>
+                        <p class="portfolio__description">TODO</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-youtube decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Repo
+                            <i class="uil uil-github decorator__icon"></i>
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__info">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">(+40) 0761-970-053</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__info">
+                            <i class="uil uil-envelope-alt contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">razvanrtr@outlook.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__info">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Bucharest - Romania</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-
-            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Razvan</h1>
+                        <span class="footer__subtitle">Game Developer</span>
+                    </div>
 
-            
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>                        
+                    </ul>
+
+                    <!-- <div class="footer__socials">
+                        <a href="" class="footer__social">
+                            ? insert icon here
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- <p class="footer__copy">&#169; Something. All rights reserved</p> -->
+            </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
