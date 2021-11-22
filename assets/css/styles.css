@@ -586,14 +586,30 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
     overflow: initial;
+    perspective: 100rem;
 }
 
 .portfolio__content {
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 100%; */
+    /* margin: 0; */
+    /* align-self: center; */
+    /* padding: 0.5em; */
+    box-sizing: border-box;
+    transition: transform .3s ease-in-out;
+}
+
+.portfolio__content:hover, 
+.portfolio__content:focus-visible {
+    transform: scale(1.05);
+    box-shadow: 0 0 var(--mb-1-5) var(--first-color);
+    cursor: pointer;
 }
 
 .portfolio__img {
-    width: 265px;
+    /* width: 265px; */
     border-radius: .5rem;
     justify-self: center;
 }
@@ -610,6 +626,49 @@ img {
 .portfolio__button:hover .button__icon {
     transform: translateX(.25rem);
 }
+
+.portfolio__data {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.portfolio__grid {
+    display: grid;
+    gap: var(--mb-0-5);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    transform: rotateY(-30deg);
+}
+
+.portfolio__grid > :nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.portfolio__grid > :nth-child(2) {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.portfolio__grid > :nth-child(3) {
+    grid-row: 1 / span 1;
+}
+
+.portfolio__grid > :nth-child(4) {
+    grid-row: 1 / span 1;
+    grid-column: span 2;
+}
+
+.portfolio__grid > :nth-child(6) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.portfolio__grid > :nth-child(5) {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 4;
+}
+
 
 /*==================== PROJECT IN MIND ====================*/
 
