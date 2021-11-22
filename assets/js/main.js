@@ -34,7 +34,7 @@ const skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills() {
     var content = this.nextElementSibling;
-    console.log(content)
+    // console.log(content)
     if (content.style.maxHeight){
       content.style.maxHeight = null;
       this.classList.remove('skills__open')
@@ -49,7 +49,31 @@ function toggleSkills() {
 skillsHeader.forEach(el => el.addEventListener('click', toggleSkills))
 
 /*==================== QUALIFICATION TABS ====================*/
+const qualificationTabs = document.querySelectorAll('[data-target]')
 
+qualificationTabs.forEach(tab => {
+    const target = document.querySelector(tab.dataset.target)
+
+    if (target.classList.contains('qualification__active')){
+        target.style.maxHeight = target.scrollHeight + 'px';
+    } else {
+        target.style.maxHeight = null;
+    }
+
+    tab.addEventListener('click', () => {
+        console.log(target)
+        console.log(target.style)
+
+
+        if (target.classList.contains('qualification__active')){
+            target.style.maxHeight = null;
+        } else {
+            target.style.maxHeight = target.scrollHeight + "px";
+        }
+        target.classList.toggle('qualification__active')
+        tab.classList.toggle('qualification__active')
+    })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
