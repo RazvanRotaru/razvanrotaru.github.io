@@ -643,6 +643,7 @@ img {
 .portfolio__img {
     /* width: 265px; */
     border-radius: .5rem;
+    overflow: hidden;
     justify-self: center;
 }
 
@@ -653,6 +654,10 @@ img {
 
 .portfolio__description {
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button {
+    margin-top: var(--mb-0-75);
 }
 
 .portfolio__button:hover .button__icon {

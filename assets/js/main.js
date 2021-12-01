@@ -80,7 +80,7 @@ qualificationTabs.forEach(tab => {
         if (target.classList.contains('qualification__active')){
             target.style.maxHeight = null;
         } else {
-            target.style.maxHeight = target.scrollHeight + "px";
+            target.style.maxHeight = target.scrollHeight + 50 + "px";
         }
         target.classList.toggle('qualification__active')
         tab.classList.toggle('qualification__active')
