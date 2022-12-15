@@ -718,7 +718,7 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
-    row-gap: 3rem;
+    column-gap: 3rem;
 }
 
 .contact__info {
